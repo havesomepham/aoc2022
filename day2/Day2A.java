@@ -5,9 +5,7 @@ import java.util.Scanner;
 
 public class Day2A {
     public static void main(String[] args) throws IOException {
-        Scanner keyIn = new Scanner(System.in);
-        File inFile = new File("day2/input.txt");
-        Scanner fileIn = new Scanner(inFile);
+        Scanner fileIn = new Scanner(new File("day2/input.txt"));
 
         int points = 0;
         while (fileIn.hasNextLine()) {
@@ -17,7 +15,6 @@ public class Day2A {
         }
 
         System.out.println(points);
-        keyIn.close();
         fileIn.close();
     }
 

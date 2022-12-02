@@ -5,9 +5,7 @@ import java.util.Scanner;
 class Day1A {
 
     public static void main(String[] args) throws IOException {
-        Scanner keyIn = new Scanner(System.in);
-        File inFile = new File("day1/input.txt");
-        Scanner fileIn = new Scanner(inFile);
+        Scanner fileIn = new Scanner(new File("day1/input.txt"));
 
         int mostCalories = 0;
         int runningCalories = 0;
@@ -25,7 +23,6 @@ class Day1A {
         }
 
         System.out.println("Max calories = " + mostCalories);
-        keyIn.close();
         fileIn.close();
     }
 }

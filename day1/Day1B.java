@@ -5,9 +5,7 @@ import java.util.Scanner;
 class Day1B {
 
     public static void main(String[] args) throws IOException {
-        Scanner keyIn = new Scanner(System.in);
-        File inFile = new File("day1/input.txt");
-        Scanner fileIn = new Scanner(inFile);
+        Scanner fileIn = new Scanner(new File("day1/input.txt"));
 
         int[] mostCalories = new int[3]; // {A, B, C} where A < B < C
         int runningCalories = 0;
@@ -40,7 +38,6 @@ class Day1B {
             totalCalories += i;
         }
         System.out.println("Total calories = " + totalCalories);
-        keyIn.close();
         fileIn.close();
     }
 }
