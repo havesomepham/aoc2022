@@ -2,7 +2,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-
 public class Day2A {
     public static void main(String[] args) throws IOException {
         Scanner fileIn = new Scanner(new File("day2/input.txt"));
