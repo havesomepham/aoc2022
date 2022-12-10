@@ -7,10 +7,6 @@ public class Day9B {
         Scanner reader = new Scanner(new File("input.txt"));
 
         int[][] knots = new int[10][2];
-        for (int[] knot : knots) {
-            knot[0] = 0;
-            knot[1] = 0;
-        }
 
         ArrayList<int[]> tailPositions = new ArrayList<>();
         tailPositions.add(Arrays.copyOf(knots[9], 2));

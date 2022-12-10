@@ -8,10 +8,6 @@ public class Day9A {
 
         int[] head = new int[2];
         int[] tail = new int[2];
-        head[0] = 0;
-        head[1] = 0;
-        tail[0] = 0;
-        tail[1] = 0;
 
         ArrayList<int[]> tailPositions = new ArrayList<>();
         tailPositions.add(Arrays.copyOf(tail, 2));
