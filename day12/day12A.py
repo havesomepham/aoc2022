@@ -38,9 +38,7 @@ for i in range(len(rows)):
 
 
 def neighbor_check(current_point, next_point) -> bool:
-    if (current_point.z >= next_point.z):
-        return True
-    elif (current_point.z == next_point.z - 1):
+    if (current_point.z >= next_point.z - 1):
         return True
     else:
         return False
