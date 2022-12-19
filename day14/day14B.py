@@ -1,3 +1,5 @@
+import time
+start_time = time.time()
 file = open("input.txt")
 
 rock_paths = file.read().strip().split("\n")
@@ -82,11 +84,14 @@ while True:
         total_sand += 1
         output_file.seek(0)
         output_file.truncate()
-        for line in char_array:
+
+print(total_sand)
+for line in char_array:
             outputline = ""
             for char in line:
                 outputline += char
             outputline += "\n"
             output_file.write(outputline)
 
-print(total_sand)
+end_time = time.time()
+print(end_time - start_time)

@@ -55,18 +55,17 @@ while True:
         char_array[curr_y][curr_x - min_x] = "."
         curr_y += 1
         char_array[curr_y][curr_x - min_x] = "o"
-    elif char_array[curr_y + 1][curr_x - min_x - 1] == ".":
+    elif char_array[curr_y + 1][curr_x - min_x - 1] == ".": # down and to the left
         char_array[curr_y][curr_x - min_x] = "."
         curr_y += 1
         curr_x -= 1
         char_array[curr_y][curr_x - min_x] = "o"
-    elif char_array[curr_y + 1][curr_x - min_x + 1] == ".":
+    elif char_array[curr_y + 1][curr_x - min_x + 1] == ".": # down and to the right
         char_array[curr_y][curr_x - min_x] = "."
         curr_y += 1
         curr_x += 1
         char_array[curr_y][curr_x - min_x] = "o"
-    else:
-        print(curr_x, curr_y)
+    else: # stuck
         curr_x = 500
         curr_y = 0
         total_sand += 1
@@ -79,4 +78,4 @@ while True:
             outputline += "\n"
             output_file.write(outputline)
 
-print(total_sand) # OFF BY ONE
+print(total_sand)
